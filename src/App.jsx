@@ -11,7 +11,7 @@ import "./App.css"
 function App() {
   return (
    
-      <div style={{border:'solid',overflow:'hidden'}}>
+      <div style={{overflow:'hidden'}}>
         <Navbare  />
         <Intro />
        <br /><br /><br /><br />
