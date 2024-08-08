@@ -2,13 +2,12 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion'; // Import Framer Motion for animations
-import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 function Navbare() {
   return (
     <Navbar expand="lg" bg="dark" variant="dark" style={navbarStyle}>
       <Container>
-        <Navbar.Brand href="#home"></Navbar.Brand>
+        <Navbar.Brand href="#home">Brand</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
@@ -38,11 +37,12 @@ function Navbare() {
 
 // Navbar Styling
 const navbarStyle = {
+  height:'70px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   backgroundColor: 'red',
   position: 'fixed', // Keeps navbar fixed
   top: 0,          // Aligns navbar to top
-   height:'70px',
+  
   width: '100%',    // Ensures navbar spans full width
   zIndex: 1000,     // Keeps navbar on top of other content
   
