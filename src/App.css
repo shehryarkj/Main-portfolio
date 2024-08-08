@@ -468,6 +468,16 @@ padding-left: 50px;
 }
 .projects{
   gap: 5px;
+  /* border: solid; */
+  grid-template-columns: 100%;
+  
+}
+.cardp{
+  height: 300px;
+  width: 250px;
+  gap: 0px;
+  position: relative;
+  left: 70px;
 }
 #n1{
   width:auto;
@@ -475,4 +485,32 @@ padding-left: 50px;
 .projects{
   padding-left:5px;
 }
-  }
+.anim{
+  /* border: solid; */
+  width: 270px;
+  position: relative;
+  left: 40px;
+  font-size: 13px;
+  font-weight: 400;
+
+}
+
+.prd{
+  /* border: solid; */
+  height: 400px;
+}
+.d11{
+  height: 700px;
+}
+#intro h1{
+  font-size: 20px;
+}
+#intro p{
+ font-size: 20px;
+}
+
+}
+#intro{
+  height:"100vh";
+}
+  

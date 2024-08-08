@@ -2,6 +2,7 @@ import React from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import { Link as ScrollLink } from 'react-scroll';
 import { motion } from 'framer-motion'; // Import Framer Motion for animations
+import { height } from '@fortawesome/free-brands-svg-icons/fa42Group';
 
 function Navbare() {
   return (
@@ -40,7 +41,8 @@ const navbarStyle = {
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   backgroundColor: 'red',
   position: 'fixed', // Keeps navbar fixed
-  top: 0,           // Aligns navbar to top
+  top: 0,          // Aligns navbar to top
+   height:'70px',
   width: '100%',    // Ensures navbar spans full width
   zIndex: 1000,     // Keeps navbar on top of other content
   
