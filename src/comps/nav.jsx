@@ -37,7 +37,7 @@ function Navbare() {
 
 // Navbar Styling
 const navbarStyle = {
-  height:'70px',
+  // height:'70px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   backgroundColor: 'red',
   position: 'fixed', // Keeps navbar fixed
