@@ -32,8 +32,11 @@ function Intro() {
             className="py-5 text-center"
             style={{ backgroundColor: 'rgba(248, 249, 250, 0.4)', borderRadius: '10px' }}
           >
-            <h1 className="display-4">It's Me, Shehryar Khan</h1>
+            
+            <h1  className="display-4">It's Me, Shehryar Khan</h1>
+            <div id="anim">
             <TypeAnimation
+             
               sequence={[
                 'I Am A Web Designer',
                 1000,
@@ -43,7 +46,9 @@ function Intro() {
               speed={50}
               style={{ fontSize: '3em' }}
               repeat={Infinity}
+             
             />
+            </div>
             <p className="lead">A Mern Stack Devoloper and Web Designer</p>
           </Col>
         </Row>
