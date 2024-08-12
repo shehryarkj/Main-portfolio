@@ -409,6 +409,10 @@ outline: #024d9d solid 0.1px;
 #i{
   font-size: 50px;
 }
+#ic{
+  position: relative;
+  left: -10px;
+ }
 
 @media only screen and (max-width: 768px)  {
    /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -417,8 +421,10 @@ outline: #024d9d solid 0.1px;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 100px;
+    /* padding-left: 100px; */
+
   }
+
   #md{
     border: solid red;
    
@@ -442,6 +448,37 @@ outline: #024d9d solid 0.1px;
     justify-content: center;
     align-items: center;
   }
+
+  .mb-4{
+    /* border: solid; */
+       padding-left: 30px;
+     }
+     
+   .cardp{
+/* border: solid black; */
+margin-top:40px;
+position: relative;
+left: 30px;
+width:300px;
+   }
+    #ac{
+      /* padding:50px; */
+     
+    }
+
+    #cc{
+      padding:30px;
+    }
+    #contact h2{
+   position: relative;
+   left: -60px;
+    }
+    #contact #cp{
+      position: relative;
+      left: -30px;
+      /* border: solid; */
+      width: 400px;
+       }
   }
   *{
     /* border: solid 0.1px; */
@@ -453,31 +490,54 @@ outline: #024d9d solid 0.1px;
       grid-template-columns:100%;
       /* border: solid; */
       width: 100%;
-      padding-left: 50px;
+      padding-left: 30px;
     }
+   .projects{
+    display: grid;
+    grid-template-columns: 100%;
+    /* border: solid; */
+  
+    
+   }
+  
+   .cardp{
+/* border: solid black; */
+margin-top:40px;
+position: relative;
+left: 30px;
+width:300px;
+   }
     #ac{
-      padding:50px;
+      /* padding:50px; */
+     
     }
+
     #cc{
-      padding:50px;
+      padding:30px;
     }
+    #contact h2{
+   position: relative;
+   left: -90px;
+    }
+    #contact #cp{
+      position: relative;
+      left: -40px;
+      /* border: solid; */
+      width: 400px;
+       }
 #Services {
 display: grid;
 grid-template-columns: 100%;
 padding-left: 50px;
 }
+.mb-4{
+  /* border: solid;   */
+  width: 500px;
+  padding-left: 40px;
+  margin-top: 40px;
+}
 .projects{
   gap: 5px;
-  /* border: solid; */
-  grid-template-columns: 100%;
-  
-}
-.cardp{
-  height: 300px;
-  width: 250px;
-  gap: 0px;
-  position: relative;
-  left: 70px;
 }
 #n1{
   width:auto;
@@ -485,32 +545,123 @@ padding-left: 50px;
 .projects{
   padding-left:5px;
 }
-.anim{
-  /* border: solid; */
-  width: 270px;
-  position: relative;
-  left: 60px;
-  font-size: 13px;
-  font-weight: 400;
+  }
 
-}
 
-.prd{
-  /* border: solid; */
-  height: 400px;
-}
-.d11{
-  height: 700px;
-}
-#intro h1{
-  font-size: 20px;
-}
-#intro p{
- font-size: 20px;
+  .contact-section {
+    position: relative;
+    padding: 50px 0;
+    border: none;
 }
 
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 3s;
 }
-#intro{
-  height:"100vh";
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
 }
-  
+
+.contact-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+#cp, #cc {
+    margin: 0;
+}
+
+#inp {
+    margin-bottom: 15px;
+}
+.contact-section {
+    position: relative;
+    padding: 50px 0;
+    border: none;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    animation: fadeInOut 3s;
+    z-index: 10000;
+}
+
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    10% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    90% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.contact-card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.contact-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    text-decoration: underline;
+}
+
+#cp, #cc {
+    margin: 0;
+}
+
+#inp {
+    margin-bottom: 15px;
+}

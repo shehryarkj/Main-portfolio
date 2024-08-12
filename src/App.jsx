@@ -8,6 +8,11 @@ import ContactMe from './comps/Contact'; // Ensure correct import
 import Services from './comps/services';
 import Skills from './comps/skills';
 import "./App.css"
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
+import { useGSAP } from '@gsap/react';
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin, useGSAP);
 function App() {
   return (
    

@@ -21,7 +21,7 @@ function Navbare() {
                 <ScrollLink
                   to={item.to}
                   smooth={true}
-                  duration={500}
+                  duration={100}
                   style={linkStyle}
                 >
                   {item.label}
@@ -37,12 +37,10 @@ function Navbare() {
 
 // Navbar Styling
 const navbarStyle = {
-  // height:'70px',
   boxShadow: '0 4px 8px rgba(0, 0, 0, 0.3)',
   backgroundColor: 'red',
   position: 'fixed', // Keeps navbar fixed
-  top: 0,          // Aligns navbar to top
-  
+  top: 0,           // Aligns navbar to top
   width: '100%',    // Ensures navbar spans full width
   zIndex: 1000,     // Keeps navbar on top of other content
   
