@@ -1,0 +1,147 @@
+#dab {
+    /* border: solid; */
+    width:1200px;
+    height: 35%;
+
+    left: -200px;
+    position: relative;
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+  }
+  #dap p{
+    /* border: solid; */
+  }
+#dab div{
+    /* border: solid; */
+    height: 510px;
+    background-color: #ffffff;
+}
+#dab div img{
+    width: 86%;
+    position: relative;
+    top: -50px;
+}
+
+
+
+.about-text {
+    /* max-width: 800px; */
+    /* border: solid; */
+    height:460px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 2;
+    color: #333;
+    text-align: justify;
+    animation: fadeInUp 2s ease-out;
+    font-family:monospace;
+}
+
+/* Keyframes for the fade-in and slide-up effect */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width:1400px) { 
+
+
+ #ac{
+     /* border: solid; */
+     width: 1200px;
+    position: relative;
+    left: -200px;
+     top: 200px; 
+
+}
+.border-light shadow-lg p-4{
+    /* border: solid; */
+    width:500px;
+     height: 490px;
+     line-height:30px;
+}
+#m{
+    /* border: solid; */
+    height: 420px;
+}
+}
+ 
+
+
+ 
+@media only screen and (max-width: 576px){
+
+    #dab{
+    
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+      width: 350px;
+    height: 500px;
+      left: 0px;
+    }
+    #dab div{
+        width: 100%;
+        /* border: solid; */
+        height: 800px;
+    }
+    #dab div img{
+        width: 300px;
+        position: relative;
+        left:100;
+        top: -50px;
+    }
+    .about-text{
+           /* max-width: 800px; */
+    /* border: solid; */
+    height:100px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+    line-height: 2;
+    color: #333;
+    text-align: justify;
+    animation: fadeInUp 2s ease-out;
+    font-family:monospace;
+
+    }
+    #ac{
+        /* border: solid; */
+        width: 400px;
+        left: -30px;
+        /* margin-top:500px; */
+        top: 500px;
+      /* margin-top:200px; */
+        
+    }
+   
+    #m{
+         /* width: 350px; */
+        position: relative;
+        /* top: 300px; */
+        /* left: -450px; */
+        
+         
+    }
+.mb-4{
+
+    /* border: solid; */
+    /* width: 300px; */
+    /* height: 1200px; */
+   
+} 
+
+}
+

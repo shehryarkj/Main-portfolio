@@ -1,5 +1,6 @@
 // Skills.js
 import React from 'react';
+import { motion } from 'framer-motion';
 // import './Skills.css';
 
 const skills = [
@@ -14,8 +15,13 @@ const skills = [
 const Skills = () => {
   return (
     <div id='Skills' className="skills">
-      <h2>My Skills</h2>
+      <h1 style={
+        {
+          fontSize:'40px'
+        }
+      }>My Skills</h1>
       <div className="skills-container">
+    
         {skills.map((skill, index) => (
           <div className="skill-card" key={index}>
             <div className="skill-content">

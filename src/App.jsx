@@ -18,12 +18,10 @@ function App() {
    
       <div style={{overflow:'hidden'}}>
         <Navbare  />
-        <Intro />
+        <Intro  />
        <br /><br /><br /><br />
         <About />
-        <div className='App'>
-      <h1>My Portfolio</h1>
-<h2> OUR SERVICES</h2>
+        <div id='app' className='App'>
         <Services/>
         </div>
         <div className="App">
@@ -31,8 +29,6 @@ function App() {
     </div>
         <br /><br /><br /><br />
         <div className="App">
-    <h1>MY PROJECTS</h1>
-    <br /><br /><br /><br />
           <Projects />
 
         </div>

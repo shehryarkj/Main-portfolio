@@ -1,6 +1,7 @@
 // Projects.js
 import React from 'react';
 // import './Projects.css';
+import { motion } from 'framer-motion';
 
 const projects = [
   { title: 'Project 1', description: 'Description for project 1' },
@@ -15,6 +16,20 @@ const projects = [
 
 const Projects = () => {
   return (
+    <>
+     <motion.h2
+                            className="display-2 mb-5"
+                            initial={{ opacity: 0, y: -50 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.2 }}
+                            style={{
+                               fontWeight: 'bold',
+                                color: '#333',
+                                height:'50px',
+                               }}
+                        >
+                           Projects
+                        </motion.h2>
     <div className="projects">
       
       {projects.map((project, index) => (
@@ -24,6 +39,7 @@ const Projects = () => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 
