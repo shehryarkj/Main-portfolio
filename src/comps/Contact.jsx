@@ -5,6 +5,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
+import pic1 from '../pics/img3.jpg'
+
 // import './ContactMe.css'; // Import the CSS file
 
 function ContactMe() {
@@ -125,7 +127,7 @@ function ContactMe() {
                             </Row>
                             <Form onSubmit={handleSubmit}>
                                 <Form.Group controlId="formName">
-                                    <h4><Form.Label>Name</Form.Label></h4>  
+                                    <h4><Form.Label>Name</Form.Label></h4>
                                     <Form.Control
                                         type="text"
                                         name="name"
@@ -137,7 +139,7 @@ function ContactMe() {
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="formEmail">
-                                    <h4><Form.Label>Email address</Form.Label></h4>  
+                                    <h4><Form.Label>Email address</Form.Label></h4>
                                     <Form.Control
                                         type="email"
                                         name="email"
@@ -149,7 +151,7 @@ function ContactMe() {
                                     />
                                 </Form.Group>
                                 <Form.Group controlId="formMessage">
-                                       <h4><Form.Label>Message</Form.Label></h4>  
+                                    <h4><Form.Label>Message</Form.Label></h4>
                                     <Form.Control
                                         as="textarea"
                                         rows={4}
@@ -170,6 +172,15 @@ function ContactMe() {
                     </Row>
                 </Container>
                 <br /><br /><br />
+                <img
+                id='img3'
+                    style={{
+                        width: '70px',
+                        
+                        borderRadius: '50%',
+                        
+                    }}
+                    src={pic1} alt="" />
                 <p className="copyright">
                     All Rights Reserved By @Shehryar Khan
                 </p>
