@@ -532,12 +532,12 @@ top:-50px;
 /* border: solid black; */
 margin-top:40px;
 position: relative;
-left:15px;
+left:30px;
 width:300px;
    }
    .skill-card{
     position: relative;
-    left: -10px;
+    left: 0px;
    }
     #ac{
       /* padding:50px; */

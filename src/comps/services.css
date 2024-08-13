@@ -9,8 +9,8 @@
         /* border: solid; */
         margin-top: 500px;
     }
-}
-
-#card{
-
+    #card{
+    position: relative;
+    left: 10px;
+    }
 }
