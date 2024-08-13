@@ -522,6 +522,11 @@ top:-50px;
   position: relative;
   left: 180px;
 }
+#anim{
+  /* border: solid; */
+  position: relative;
+  
+}
     .skills-container{
       display: grid;
       grid-template-columns:100%;
@@ -579,7 +584,7 @@ gap: 70px;
   /* width: 250px; */
   position: relative;
   font-size: 12px;
-  /* left: 70px; */
+  margin-left: 20px;
 }
 .mb-4{
   /* border: solid;   */
@@ -597,7 +602,7 @@ gap: 70px;
   padding-left:30px;
 }
 .anim{
-  border: solid;
+  /* border: solid;  */
   /* width: 270px; */
   position: relative;
   /* left: 60px; */
@@ -651,7 +656,7 @@ gap: 70px;
  height:80%;
   border:0px;
   position: relative;
-  left:-40px;
+  left:-30px;
   top: 410px;
   z-index: -1;
 
