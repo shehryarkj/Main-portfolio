@@ -1,7 +1,6 @@
-// Skills.js
 import React from 'react';
 import { motion } from 'framer-motion';
-// import './Skills.css';
+import "../comps/skills.css";
 
 const skills = [
   { name: 'HTML', level: 100, logo: 'https://img.icons8.com/color/48/000000/html-5.png' },
@@ -13,19 +12,31 @@ const skills = [
 ];
 
 const Skills = () => {
+  // Determine if dark mode is enabled by checking a global theme context or similar method
+  // This is a placeholder. Replace with actual dark mode detection logic
+  const isDarkMode = document.body.classList.contains('dark-mode');
+
   return (
-    <div id='Skills' className="skills">
-      <h1 style={
-        {
-          fontSize:'40px'
-        }
-      }>My Skills</h1>
-      <div className="skills-container">
-    
+    <div id='Skills' className={`skills ${isDarkMode ? 'dark-mode' : ''}`}>
+      <h1>My Skills</h1>
+      <ul className="skills-list">
         {skills.map((skill, index) => (
-          <div className="skill-card" key={index}>
-            <div className="skill-content">
-              <img src={skill.logo} alt={skill.name} className="skill-logo" />
+          <motion.li
+            key={index}
+            className="skill-item"
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
+          >
+            <motion.img
+              src={skill.logo}
+              alt={skill.name}
+              className="skill-logo"
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              transition={{ duration: 0.5 }}
+            />
+            <div className="skill-details">
               <h3>{skill.name}</h3>
               <div className="progress-bar">
                 <div
@@ -35,9 +46,9 @@ const Skills = () => {
               </div>
               <span className="skill-level">{skill.level}%</span>
             </div>
-          </div>
+          </motion.li>
         ))}
-      </div>
+      </ul>
     </div>
   );
 };

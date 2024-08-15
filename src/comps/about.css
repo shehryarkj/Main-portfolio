@@ -1,15 +1,26 @@
-#dab {
+.about-container {
     /* border: solid; */
     width:1200px;
-    height: 35%;
-
+    height: 50%;
     left: -200px;
     position: relative;
+    /* border: solid blue; */
     font-family: 'Arial', sans-serif;
-    background: linear-gradient(to right, #f0f0f0, #ffffff);
+    /* background: linear-gradient(to right, #f0f0f0, #ffffff); */
     display: grid;
     grid-template-columns: 50% 50%;
     
+  }
+  .dark-mode {
+    /* border: solid; */
+    background-color: #333;
+  }
+  .about-container div{
+    /* border: solid white; */
+  }
+  #about{
+    background-color: var(--background-color);
+    color: var(--text-color);
   }
   #dap p{
     /* border: solid; */
@@ -19,10 +30,11 @@
     height: 510px;
     background-color: #ffffff;
 }
-#dab div img{
+.about-container div img{
     width: 86%;
     position: relative;
     top: -50px;
+    border-radius: 50%;
 }
 
 
@@ -30,7 +42,7 @@
 .about-text {
     /* max-width: 800px; */
     /* border: solid; */
-    height:460px;
+    /* height:460px;     */
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -74,6 +86,13 @@
 #m{
     /* border: solid; */
     height: 420px;
+    text-align: justify;
+    border: solid;
+   
+}
+#m p{
+    position: relative;
+    left:20px;
 }
 }
  
@@ -82,7 +101,7 @@
  
 @media only screen and (max-width: 576px){
 
-    #dab{
+    .about-container{
     
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
@@ -91,12 +110,12 @@
       left: 20px;
       /* border: solid; */
     }
-    #dab div{
+    .about-container div{
         width: 100%;
         /* border: solid; */
         height: 800px;
     }
-    #dab div img{
+    .about-container div img{
         width: 300px;
         position: relative;
         left:100;
@@ -146,4 +165,51 @@
 } 
 
 }
-
+/* Default light mode styles */
+/* .about-container {
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  } */
+   */
+  .about-container img {
+    width: 150px; /* Adjust as needed */
+    border-radius: 50%;
+  }
+  
+  .about-text {
+    font-size: 16px;
+    color: #333; /* Dark text color for light mode */
+  }
+  
+  /* Dark mode styles */
+  .dark-mode .about-container {
+    background-color: #121212; /* Dark background for the container */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .dark-mode .about-text {
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .dark-mode .card-sm {
+    background-color: #1e1e1e; /* Dark background for cards */
+    border: 2px solid #ffffff; /* White border for cards */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .dark-mode .card-sm h3 {
+    color: #e0e0e0; /* Light text color for card titles in dark mode */
+  }
+  
+  .dark-mode .card-sm p, .dark-mode .card-sm ul {
+    color: #b0b0b0; /* Lighter text color for card descriptions in dark mode */
+  }
+ .dark-mode .about-container{
+    background-color: transparent;
+ }  
+ .about-container{
+    /* border: solid green; */
+    
+ }

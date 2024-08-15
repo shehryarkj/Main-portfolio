@@ -4,7 +4,10 @@
     color: black;
   }
 }
-
+#nav1{
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
 /* nav.css */
 
 /* Ensure the toggle button (hamburger menu) is black */
@@ -29,3 +32,46 @@
 }
 }
 
+/* Default light mode styles */
+.navbar-light {
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.navbar-light .navbar-brand img {
+  border: 1px solid #000000; /* Optional: Add a border around the logo */
+}
+
+.navbar-light .nav-link {
+  color: #000000;
+}
+
+.navbar-light .nav-link:hover {
+  color: #007bff; /* Optional: Change color on hover */
+}
+
+/* Dark mode styles */
+.dark-mode .navbar-light {
+  background-color: #121212;
+  color: #e0e0e0;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.dark-mode .navbar-light .navbar-brand img {
+  border: 1px solid #e0e0e0; /* Optional: Add a border around the logo */
+}
+
+.dark-mode .navbar-light .nav-link {
+  color: #e0e0e0;
+}
+
+.dark-mode .navbar-light .nav-link:hover {
+  color: #1e90ff; /* Optional: Change color on hover */
+}
+.dark-mode #nav1{
+  background-color: #8b8686;
+}
+#nav1{
+  background-color: white;
+}

@@ -1,0 +1,68 @@
+/* Default styles for light mode */
+.d11 {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  border: 0;
+  grid-template-columns: 60% 40%;
+}
+
+/* Blurred Background */
+
+/* Content Container */
+.c1 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark Mode Styles */
+.dark-mode .d11 {
+  grid-template-columns: 60% 40%;
+}
+
+/* Dark Mode Background */
+.dark-mode .d11::before {
+  background-image: url('../pics/wallapapper3-dark.jpg'); /* Ensure you have a dark mode image */
+}
+
+/* Dark Mode Content */
+.dark-mode .c1 {
+  /* background-color: rgba(0, 0, 0, 0.7); Dark background with opacity */
+  color: #fff; /* Light text color */
+}
+
+.dark-mode .display-4 {
+  color: #fff; /* Light color for main heading */
+}
+
+.dark-mode .lead {
+  color: #ddd; /* Light color for subheading */
+}
+
+/* Dark Mode Button */
+.dark-mode #btn1 .btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+@media  (max-width: 786px){
+  .dark-mode #img1{
+    z-index: 100;
+  }
+  #col1{
+    /* border: solid; */
+    position: relative;
+    left: 5px;
+  }
+  
+}
+@media  (max-width: 1400px){
+  .dark-mode #col1{
+    background-color: transparent;
+  }
+
+}
+#col1{
+  background-color: rgba(248, 249, 250, 0.7);
+}

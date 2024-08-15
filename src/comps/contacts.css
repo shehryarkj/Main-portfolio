@@ -1,0 +1,66 @@
+#contat{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+/* Default light mode styles */
+.contact-section {
+    padding: 80px 0;
+    background-color: #f7f9fc;
+    color: #333;
+  }
+  
+  .contact-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-card-title {
+    font-size: 1.25rem;
+    color: #007bff;
+  }
+  
+  .contact-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .contact-link:hover {
+    text-decoration: underline;
+  }
+  
+  .notification {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #28a745;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Dark mode styles */
+  .dark-mode .contact-section {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  .dark-mode .contact-card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode .contact-card-title {
+    color: #007bff;
+  }
+  
+  .dark-mode .contact-link {
+    color: #007bff;
+  }
+  
+  .dark-mode .notification {
+    background-color: #17a2b8;
+  }
+  

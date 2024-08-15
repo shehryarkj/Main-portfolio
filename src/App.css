@@ -257,13 +257,7 @@ p {
   cursor: pointer;
 }
 
-.cardp:hover {
-  transform: translateY(-15px) rotate(10deg) scale(1.05);
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-  background-color: #333;
-  opacity: 1;
-  color:white;
-}
+
 
 h3 {
   margin: 0.5rem 0;
@@ -387,12 +381,12 @@ h3 {
 height: 50px;
 background-color: transparent;
 border: #9dbfe4 solid ;
-outline: #024d9d solid 0.1px;
+outline: #031f3c solid 0.01px;
 /* border-radius: 20px; */
 }
 #inp::placeholder{
  font-size: 20px;
- font-weight: 500;
+ font-weight: 400;
 }
 .copyright {
   font-size: 0.875rem; /* Font size */
@@ -468,7 +462,7 @@ outline: #024d9d solid 0.1px;
 /* border: solid black; */
 margin-top:40px;
 position: relative;
-left: 30px;
+left: 20px;
 width:300px;
    }
     #ac{
@@ -517,11 +511,12 @@ left: 250px;
 top:-50px;
  
 }
-  @media only screen and (max-width: 576px) {
+  @media only screen and (max-width: 786px) {
 #img3{
   position: relative;
   left: 180px;
 }
+
 #anim{
   /* border: solid; */
   position: relative;
@@ -546,8 +541,8 @@ top:-50px;
    .cardp{
 /* border: solid black; */
 margin-top:40px;
-position: relative;
-left:30px;
+/* position: relative; */
+/* left:30px; */
 width:300px;
    }
    .skill-card{
@@ -575,7 +570,7 @@ width:300px;
 #Services {
 display: grid;
 grid-template-columns: 100%;
-padding-left: 50px;
+/* padding-left: 50px; */
 /* border: solid; */
 gap: 70px;
 }
@@ -599,7 +594,7 @@ gap: 70px;
   width:auto;
 }
 .projects{
-  padding-left:30px;
+  /* padding-left:30px; */
 }
 .anim{
   /* border: solid;  */
@@ -786,10 +781,30 @@ gap: 70px;
 #inp {
     margin-bottom: 15px;
 }
-@media only screen and (max-width:564px){
+#dbutton{
+ border: solid black;
+}
+@media only screen and (max-width:784px){
   #btn1{
     display: none;
   }
+  #dbutton{
+    position: relative;
+    top: 150px;
+    left: 150px;
+  }
+}
+#cc{
+  display: grid;
+  grid-template-columns: 100%;
+  /* border: solid; */
+  padding-left: 30px;
+}
+#ccard{
+  /* border: solid; */
+  width: 350px;
+  font-size:8px;
+  padding-left: 20px;
 }
 @media (min-width: 768px) and (max-width: 1400px){
 #img1{
@@ -806,4 +821,121 @@ gap: 70px;
 #col1{
   margin-top: 100px;
 }
+#cc{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  /* border: solid; */
+  height: 200px;
+position: relative;
+}
+#ccard{
+  /* border: solid; */
+  width: 350px;
+  height: 150px;
+  font-size:8px;
+  padding-left: 20px;
+  position: absolute;
+  top:20px;
+}
+
+}
+/* Default light mode styles */
+body, html {
+  color: #333;
+  background-color: #fff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.light-mode {
+  --background-color: #fff;
+  --text-color: #333;
+}
+
+.dark-mode {
+  --background-color: #121212;
+  --text-color: #e0e0e0;
+}
+
+body, html {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+/* Optional: style for the theme toggle button */
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.theme-toggle:hover {
+  background-color: var(--text-color);
+  color: var(--background-color);
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 3000;
+}
+
+.theme-toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.theme-toggle-checkbox {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.theme-toggle-slider {
+  width: 34px;
+  height: 20px;
+  background-color: #ccc;
+  border-radius: 50px;
+  position: relative;
+  transition: .4s;
+}
+
+.theme-toggle-slider:before {
+  content: "";
+  position: absolute;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: .4s;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-slider {
+  background-color: #2196F3;
+}
+
+.theme-toggle-checkbox:checked + .theme-toggle-slider:before {
+  transform: translateX(14px);
+}
+
+.theme-icon {
+  margin-left: 10px;
+}
+.dark-mode #dbutton{
+  background-color: #e1e3e5;
+  color: black;
 }

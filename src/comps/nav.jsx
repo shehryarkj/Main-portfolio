@@ -7,7 +7,7 @@ import pic1 from '../pics/img3.jpg'
 
 function Navbare() {
   return (
-    <Navbar id='nav1' expand="lg" bg="white" variant="light" style={navbarStyle}>
+    <Navbar id='nav1' expand="lg"  variant="light" style={navbarStyle}>
       <Container >
         <Navbar.Brand href="#home">
           <img

@@ -1,7 +1,7 @@
-// Services.js
 import React from 'react';
-import "../comps/services.css"
+import "../comps/services.css";
 import { motion } from 'framer-motion';
+
 const services = [
   {
     title: 'Web Development',
@@ -21,25 +21,25 @@ const services = [
 ];
 
 const Services = () => {
-  return (
-<>
+  // Determine if dark mode is enabled by checking a global theme context or similar method
+  // This is a placeholder. Replace with actual dark mode detection logic
+  const isDarkMode = document.body.classList.contains('dark-mode');
 
-    
-    <div id='Services' className="services">
-    <motion.h2
-                            className="display-2 mb-5"
-                            initial={{ opacity: 0, y: -50 }}
-                            animate={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.2 }}
-                            style={{
-                               fontWeight: 'bold',
-                                color: '#333',
-                                height:'150px',
-                                paddingTop:'150px',
-                               }}
-                        >
-                           My Services
-                        </motion.h2>
+  return (
+    <div id='Services' className={`services ${isDarkMode ? 'dark-mode' : ''}`}>
+      <motion.h2
+        className="display-2 mb-5"
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.2 }}
+        style={{
+          fontWeight: 'bold',
+          height: '150px',
+          paddingTop: '150px'
+        }}
+      >
+        My Services
+      </motion.h2>
       {services.map((service, index) => (
         <div id='card' className="card" key={index}>
           <div className="icon">{service.icon}</div>
@@ -48,7 +48,6 @@ const Services = () => {
         </div>
       ))}
     </div>
-    </>
   );
 };
 

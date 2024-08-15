@@ -1,0 +1,86 @@
+.projects{
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
+
+/* Default light mode styles */
+.projects-container {
+    background-color: #f7f9fc; /* Light background */
+    color: #333; /* Dark text color for light mode */
+    padding: 50px 0;
+  }
+  
+  .projects-container .display-2 {
+    color: #333; /* Dark text color for headings in light mode */
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+  }
+  
+  .cardp {
+    background-color: #fff; /* Light background for cards */
+    border: 2px solid #ddd; /* Light border */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px;
+    width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s, background-color 0.3s;
+  }
+  
+  .cardp h3 {
+    color: #333; /* Dark text color for card titles */
+  }
+  
+  .cardp p {
+    color: #666; /* Medium text color for card descriptions */
+  }
+  
+  /* Dark mode styles */
+  .dark-mode .projects-container {
+    background-color: #121212; /* Dark background for the container */
+    color: #e0e0e0; /* Light text color for dark mode */
+  }
+  
+  .dark-mode .projects-container .display-2 {
+    color: #e0e0e0; /* Light text color for headings in dark mode */
+  }
+  
+  .dark-mode .cardp {
+    background-color: #1e1e1e; /* Dark background for cards */
+    border: 2px solid #ffffff; /* White border for cards */
+    color: #e0e0e0; /* Light text color for cards */
+  }
+  
+  .dark-mode .cardp h3 {
+    color: #e0e0e0; /* Light text color for card titles in dark mode */
+  }
+  
+  .dark-mode .cardp p {
+    color: #b0b0b0; /* Lighter text color for card descriptions in dark mode */
+  }
+  .dark-mode .projects{
+    background-color:#333;
+  }
+
+  @media only screen and (max-width:564px){
+    /* #projects{
+      border: solid;
+      padding-left:50px;
+    }
+    .cardp{
+      border: solid;
+    } */
+  }
+  .cardp:hover {
+    transform: translateY(-15px) rotate(10deg) scale(1.05);
+    /* box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); */
+    background-color: #333;
+    opacity:1;
+    color:white;
+    border: green;
+  }

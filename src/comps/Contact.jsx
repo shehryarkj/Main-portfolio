@@ -5,24 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhoneAlt, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faWhatsapp, faGoogle } from '@fortawesome/free-brands-svg-icons';
 import emailjs from 'emailjs-com';
-import pic1 from '../pics/img3.jpg'
-
-// import './ContactMe.css'; // Import the CSS file
+import pic1 from '../pics/img3.jpg';
+import "../comps/contacts.css";
 
 function ContactMe() {
-    // State to manage form inputs
     const [formData, setFormData] = useState({
         name: '',
         email: '',
         message: ''
     });
 
-    // State to manage form submission status
     const [formStatus, setFormStatus] = useState('');
     const [isSubmitting, setIsSubmitting] = useState(false);
-    const [notification, setNotification] = useState(null); // Notification state
+    const [notification, setNotification] = useState(null);
 
-    // Handle input changes
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData({
@@ -31,12 +27,10 @@ function ContactMe() {
         });
     };
 
-    // Handle form submission
     const handleSubmit = async (e) => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simple validation
         if (!formData.name || !formData.email || !formData.message) {
             setFormStatus('Please fill in all fields.');
             setIsSubmitting(false);
@@ -45,28 +39,26 @@ function ContactMe() {
 
         try {
             const result = await emailjs.send(
-                'service_1wv3ytg',       // Replace with your EmailJS service ID
-                'template_94igc5q',      // Replace with your EmailJS template ID
+                'service_1wv3ytg',
+                'template_94igc5q',
                 formData,
-                'Zu8GVWf9NofFfQX3R'     // Replace with your EmailJS user ID
+                'Zu8GVWf9NofFfQX3R'
             );
 
             if (result.text === 'OK') {
                 setFormStatus('Message sent successfully!');
-                setNotification('Message sent successfully!'); // Set notification
-
+                setNotification('Message sent successfully!');
                 setFormData({ name: '', email: '', message: '' });
-                setNotification('Message sent successfully!'); // Set notification
-                setTimeout(() => setNotification(null), 3000); // Hide notification after 3 seconds
+                setTimeout(() => setNotification(null), 3000);
             } else {
                 setFormStatus('Failed to send message. Please try again.');
-                setNotification('Failed to send message.'); // Set notification
-                setTimeout(() => setNotification(null), 3000); // Hide notification after 3 seconds
+                setNotification('Failed to send message.');
+                setTimeout(() => setNotification(null), 3000);
             }
         } catch (error) {
             setFormStatus('An error occurred. Please try again.');
-            setNotification('An error occurred.'); // Set notification
-            setTimeout(() => setNotification(null), 3000); // Hide notification after 3 seconds
+            setNotification('An error occurred.');
+            setTimeout(() => setNotification(null), 3000);
         } finally {
             setIsSubmitting(false);
         }
@@ -77,26 +69,15 @@ function ContactMe() {
             <section id="contact" className="contact-section">
                 <Container>
                     <Row className="justify-content-center">
-                        <Col md={8} className="text-center">
+                        <Col id='cnt' md={8} className="text-center">
                             <h2 className="display-4 mb-4">Contact Me</h2>
                             <p id='cp' className="lead mb-4">Feel free to reach out to me through any of the following methods:</p>
                             <Row id='cc' className="justify-content-center">
                                 <Col md={6}>
-                                    <Card className="contact-card mb-4 shadow-lg">
-                                        <Card.Body>
-                                            <Card.Title className="contact-card-title">
-                                                <FontAwesomeIcon id="ic" icon={faPhoneAlt} /> Phone
-                                            </Card.Title>
-                                            <Card.Text>
-                                                <a href="tel:+923118105762" className="contact-link">
-                                                    <span>+923118105762</span>
-                                                </a>
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
+                                    {/* Additional contact info or section can go here */}
                                 </Col>
                                 <Col md={6}>
-                                    <Card className="contact-card mb-4 shadow-lg">
+                                    <Card id='ccard' className="contact-card mb-4 shadow-lg">
                                         <Card.Body>
                                             <Card.Title className="contact-card-title">
                                                 <FontAwesomeIcon id="ic" icon={faGoogle} />
@@ -111,7 +92,7 @@ function ContactMe() {
                                     </Card>
                                 </Col>
                                 <Col md={6}>
-                                    <Card className="contact-card mb-4 shadow-lg">
+                                    <Card id='ccard' className="contact-card mb-4 shadow-lg">
                                         <Card.Body>
                                             <Card.Title className="contact-card-title">
                                                 <FontAwesomeIcon id="ic" style={{ color: 'green', fontSize: '30px' }} icon={faWhatsapp} /> WhatsApp
@@ -164,7 +145,7 @@ function ContactMe() {
                                         required
                                     />
                                 </Form.Group>
-                                <Button variant="primary" type="submit" className="mt-3">
+                                <Button variant="primary" type="submit" className="mt-3" disabled={isSubmitting}>
                                     Send Message
                                 </Button>
                             </Form>
@@ -173,12 +154,10 @@ function ContactMe() {
                 </Container>
                 <br /><br /><br />
                 <img
-                id='img3'
+                    id='img3'
                     style={{
                         width: '70px',
-                        
                         borderRadius: '50%',
-                        
                     }}
                     src={pic1} alt="" />
                 <p className="copyright">
