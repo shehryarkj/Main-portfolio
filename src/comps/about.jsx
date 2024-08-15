@@ -41,6 +41,7 @@ function About() {
                                     <h3 className="mb-3 d-flex align-items-center">
                                         <FaGraduationCap id='i' className="mr-2" style={{ color: '#007bff' }} /> Diploma in Information Technology (DIT)
                                     </h3>
+                                    <div className="para">
                                     <p><strong>Location:</strong> Islamabad, Pakistan</p>
                                     <p>This diploma laid the foundation for my IT career, covering essential topics and providing hands-on experience in:</p>
                                     <ul className="text-left">
@@ -48,6 +49,7 @@ function About() {
                                         <li><strong>Hands-On Experience:</strong> Labs and projects focusing on troubleshooting, software installation, and system configuration.</li>
                                         <li><strong>Professional Skills:</strong> Problem-solving, effective communication, and teamwork.</li>
                                     </ul>
+                                    </div>
                                 </motion.div>
                             </Col>
                             <Col md={6} className="mb-4">
@@ -62,6 +64,7 @@ function About() {
                                     <h3 className="mb-3 d-flex align-items-center">
                                         <FaCode id='i' className="mr-2" style={{ color: '#28a745' }} /> Master in MERN Stack
                                     </h3>
+                                    <div className="para">
                                     <p><strong>Location:</strong> Lahore, Pakistan<br />
                                         <strong>Institution:</strong> Nexuss Berry</p>
                                     <p>Focused on the MERN stack, this diploma included:</p>
@@ -76,6 +79,7 @@ function About() {
                                         <li><strong>Project 1:</strong> Responsive e-commerce website.</li>
                                         <li><strong>Project 2:</strong> Real-time chat application with notifications.</li>
                                     </ul>
+                                    </div>
                                 </motion.div>
                             </Col>
                         </Row>

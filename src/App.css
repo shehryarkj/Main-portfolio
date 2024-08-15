@@ -420,9 +420,9 @@ outline: #031f3c solid 0.01px;
   
    #ac{
     /* border: solid; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     /* padding-left: 100px; */
 
   }
@@ -455,7 +455,7 @@ outline: #031f3c solid 0.01px;
 
   .mb-4{
     /* border: solid; */
-       padding-left: 30px;
+       /* padding-left: 30px; */
      }
      
    .cardp{
@@ -581,12 +581,7 @@ gap: 70px;
   font-size: 12px;
   margin-left: 20px;
 }
-.mb-4{
-  /* border: solid;   */
-  width: 500px;
-  padding-left: 50px;
-  margin-top: 40px;
-}
+
 .projects{
   gap: 5px;
 }

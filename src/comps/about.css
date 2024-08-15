@@ -99,7 +99,7 @@
 
 
  
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 756px){
 
     .about-container{
     
@@ -108,7 +108,7 @@
       width: 350px;
     height: 500px;
       left: 20px;
-      /* border: solid; */
+    
     }
     .about-container div{
         width: 100%;
@@ -124,7 +124,7 @@
     .about-text{
            /* max-width: 800px; */
     /* border: solid; */
-    height:100px;
+    height:800px;
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
@@ -140,7 +140,7 @@
     #ac{
         /* border: solid; */
         width: 400px;
-        left: -10px;
+        left: 10px;
         /* margin-top:500px; */
         top: 550px;
       /* margin-top:200px; */
@@ -149,12 +149,21 @@
    
     #m{
          /* width: 350px; */
-         height: 600px;
+         height: 700px;
         position: relative;
         /* top: 300px; */
         /* left: -450px; */
+      text-align:justify;
+        
+      line-height: 30px;
         
          
+    }
+    #m ul{
+      list-style: none;
+      /* border: solid white; */
+      position: relative;
+      left: -20px;
     }
 .mb-4{
 
