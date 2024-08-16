@@ -105,7 +105,7 @@
 @media only screen and (max-width: 756px){
 
     .about-container{
-    
+      /* border: solid; */
         grid-template-columns: 100%;
         grid-template-rows: 50% 50%;
       width: 350px;
@@ -124,11 +124,12 @@
     #db{
       /* border: solid; */
       /* height:1600px; */
+       /* line-height:10px; */
     }
     .about-container div{
         width: 100%;
-        /* border: solid; */
-        height: 800px;
+        /* border: solid green; */
+        height: 840px;
     }
     .about-container div img{
         width: 300px;
