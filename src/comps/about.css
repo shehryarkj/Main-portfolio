@@ -21,6 +21,7 @@
   #about{
     background-color: var(--background-color);
     color: var(--text-color);
+     
   }
   #dap p{
     /* border: solid; */
@@ -66,6 +67,7 @@
         transform: translateY(0);
     }
 }
+
 @media only screen and (max-width:1400px) { 
 
 
@@ -110,6 +112,18 @@
     height: 500px;
       left: 20px;
     
+    }
+    *{
+      /* border: solid; */
+    }
+    #about{
+      /* border: solid; */
+      /* height: 2900px; */
+     
+    }
+    #db{
+      /* border: solid; */
+      /* height:1600px; */
     }
     .about-container div{
         width: 100%;

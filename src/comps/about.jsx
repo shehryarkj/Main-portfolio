@@ -24,9 +24,19 @@ function About() {
                         >
                             About Me
                         </motion.h2>
-                        <div style={{ backgroundColor: 'transparent' }} className='about-container' id="db">
+                        <div  style={{ backgroundColor: 'transparent' }} className='about-container' id="db">
                             <div  > <img src={pic2} alt="Profile" /></div>
-                            <div style={{ backgroundColor: 'transparent' }}> <p style={{ backgroundColor: 'transparent' }} className="about-text"> As a Frontend Developer specializing in the MERN stack, I possess a deep understanding of MongoDB, Express.js, React, and Node.js, enabling me to craft dynamic and responsive web applications with ease. My tenure at VWork Institute of Softwares in Lahore has refined my ability to translate complex requirements into intuitive, user-friendly interfaces. Proficient in leveraging modern JavaScript frameworks and libraries, I build scalable and efficient frontend solutions that prioritize high-quality, maintainable code. Committed to delivering exceptional user experiences, I am passionate about continuous learning and innovation. I thrive in collaborative settings and eagerly embrace new challenges to drive impactful results.</p></div>
+                            <div  style={{ backgroundColor: 'transparent' }}>
+                               <p style={{ backgroundColor: 'transparent' }} className="about-text">
+                                 As a Frontend Developer specializing in the MERN stack, I possess a
+                               deep understanding of MongoDB, Express.js, React, and Node.js, enabling me to craft
+                                dynamic and responsive web applications with ease. My tenure at VWork Institute of
+                                 Softwares in Lahore has refined my ability to translate complex requirements into
+                                  intuitive, user-friendly interfaces. Proficient in leveraging modern JavaScript
+                                   frameworks and libraries, I build scalable and efficient frontend solutions that
+                                    prioritize high-quality, maintainable code. Committed to delivering exceptional 
+                                    user experiences, I am passionate about continuous learning and innovation.
+                                     I thrive in collaborative settings and eagerly embrace new challenges to drive impactful results.</p></div>
                         </div>
     <Row id='ac' className="mt-4">
     <Col md={6} className="mb-4">
