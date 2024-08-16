@@ -153,6 +153,10 @@ function ContactMe() {
                     </Row>
                 </Container>
                 <br /><br /><br />
+
+                <div id='footer'>
+
+            
                 <img
                     id='img3'
                     style={{
@@ -163,6 +167,7 @@ function ContactMe() {
                 <p className="copyright">
                     All Rights Reserved By @Shehryar Khan
                 </p>
+                </div>
             </section>
 
             {/* Notification */}

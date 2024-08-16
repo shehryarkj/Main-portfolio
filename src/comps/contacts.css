@@ -74,6 +74,14 @@
      
       
     }
+
+    #footer{
+      border: solid;
+      display: flex;
+      align-items: center;
+      /* justify-content: center; */
+      flex-direction: column;
+    }
     #contact p{
       /* border: solid green; */
       width: 90%;

@@ -518,7 +518,7 @@ top:-50px;
   @media only screen and (max-width: 786px) {
 #img3{
   position: relative;
-  left: 180px;
+  left:0px;
 }
 
 #anim{
