@@ -128,7 +128,7 @@
     }
     .about-container div{
         width: 100%;
-        /* border: solid green; */
+        border: solid green;
         height: 840px;
     }
     .about-container div img{
