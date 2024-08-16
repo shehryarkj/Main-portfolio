@@ -2,18 +2,18 @@
 
 
     #Services{
-        margin-top:500px;
+        margin-top:200px;
     }
 }
 
 
-@media only screen and (max-width:564px){
+@media only screen and (max-width:764px){
     #app{
 
 
 
-        /* border: solid; */
-        margin-top: 500px;
+        border: solid;
+        margin-top: 400px;
     }
     #card{
     position: relative;

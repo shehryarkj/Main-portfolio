@@ -74,7 +74,8 @@
      width: 1200px;
     position: relative;
     left: -200px;
-     top: 200px; 
+     /* top: 200px;  */
+     line-height: 40px;
 
 }
 .border-light shadow-lg p-4{
@@ -142,6 +143,8 @@
         width: 400px;
         left: 10px;
         /* margin-top:500px; */
+        line-height: 40px;
+       
         top: 550px;
       /* margin-top:200px; */
         
@@ -154,11 +157,13 @@
         /* top: 300px; */
         /* left: -450px; */
       text-align:justify;
+    
         
-      line-height: 30px;
+   
         
          
     }
+   
     #m ul{
       list-style: none;
       /* border: solid white; */

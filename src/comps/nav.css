@@ -1,4 +1,4 @@
-@media only screen and (max-width:564px){
+@media only screen and (max-width:764px){
 
   #nav1{
     color: black;
@@ -7,6 +7,7 @@
 #nav1{
   background-color: var(--background-color);
   color: var(--text-color);
+  
 }
 /* nav.css */
 
@@ -30,6 +31,14 @@
   z-index: 2000;
  padding-left:50px;
 }
+
+
+}
+#nav1{
+  z-index:1000;
+}
+@media (min-width: 768px) and (max-width: 1400px){
+
 }
 
 /* Default light mode styles */

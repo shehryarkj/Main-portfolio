@@ -53,7 +53,13 @@
   #col1{
     /* border: solid; */
     position: relative;
-    left: 5px;
+    /* left: 5px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%;
+    
   }
   
 }

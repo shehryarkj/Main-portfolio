@@ -63,4 +63,31 @@
   .dark-mode .notification {
     background-color: #17a2b8;
   }
-  
+
+  @media only screen and (max-width: 856px){
+    #contact{
+      
+      /* display: flex;
+      justify-content: center;
+      align-items: center; */ 
+      padding-left:-10px;
+     
+      
+    }
+    #contact p{
+      /* border: solid green; */
+      width: 90%;
+    }
+    #contact h2{
+      /* border: solid; */
+      position: relative;
+      /* left: 40px; */
+      
+    }
+    #form{
+      /* border: solid; */
+     position: relative;
+     /* left:40px; */
+    }
+
+  }

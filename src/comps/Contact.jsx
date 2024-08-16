@@ -106,8 +106,8 @@ function ContactMe() {
                                     </Card>
                                 </Col>
                             </Row>
-                            <Form onSubmit={handleSubmit}>
-                                <Form.Group controlId="formName">
+                            <Form id='form' onSubmit={handleSubmit}>
+                                <Form.Group  controlId="formName">
                                     <h4><Form.Label>Name</Form.Label></h4>
                                     <Form.Control
                                         type="text"

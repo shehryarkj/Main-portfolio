@@ -34,7 +34,7 @@ function App() {
     <div className={darkMode ? 'dark-mode' : 'light-mode'} style={{ overflow: 'hidden' }}>
       <Navbare />
       <button id='dbutton' style={{
-        zIndex:'3000'
+       
       }} onClick={toggleDarkMode} className="theme-toggle">
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>

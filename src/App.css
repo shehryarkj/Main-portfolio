@@ -387,6 +387,10 @@ outline: #031f3c solid 0.01px;
 #inp::placeholder{
  font-size: 20px;
  font-weight: 400;
+ color: rgb(48, 46, 46);
+}
+.dark-mode #inp::placeholder{
+  color: white;
 }
 .copyright {
   font-size: 0.875rem; /* Font size */
@@ -436,7 +440,7 @@ outline: #031f3c solid 0.01px;
   }
   #cc{
     /* border: solid; */
-    padding-left: 100px;
+    /* padding-left: 100px; */
   }
   .skills-container{
     display: grid;
@@ -474,12 +478,12 @@ width:300px;
       padding:30px;
     }
     #contact h2{
-   position: relative;
-   left: -60px;
+   /* position: relative; */
+   /* left: -60px; */
     }
     #contact #cp{
-      position: relative;
-      left: -30px;
+      /* position: relative; */
+      /* left: -30px; */
       /* border: solid; */
       width: 400px;
        }
@@ -519,7 +523,7 @@ top:-50px;
 
 #anim{
   /* border: solid; */
-  position: relative;
+  /* position: relative; */
   
 }
     .skills-container{
@@ -555,15 +559,15 @@ width:300px;
     }
 
     #cc{
-      padding-left:20px;
+      /* padding-left:20px; */
     }
     #contact h2{
    position: relative;
-   left: -90px;
+   /* left: -90px; */
     }
     #contact #cp{
       position: relative;
-      left: -40px;
+      /* left: -40px; */
       /* border: solid; */
       width: 400px;
        }
@@ -579,7 +583,7 @@ gap: 70px;
   /* width: 250px; */
   position: relative;
   font-size: 12px;
-  margin-left: 20px;
+  /* margin-left: 20px; */
 }
 
 .projects{
@@ -633,7 +637,7 @@ gap: 70px;
   font-weight:400;
   /* border: solid; */
   width: 250px;
-  left: 50px;
+  /* left: 50px; */
 }
 #dv{
   display: flex;
@@ -778,6 +782,7 @@ gap: 70px;
 }
 #dbutton{
  border: solid black;
+ z-index: 1000;
 }
 @media only screen and (max-width:784px){
   #btn1{
@@ -788,6 +793,10 @@ gap: 70px;
     top: 150px;
     left: 150px;
   }
+  #dbutton{
+    border: solid black;
+     z-index: 900;
+   }
 }
 #cc{
   display: grid;
@@ -801,7 +810,7 @@ gap: 70px;
   font-size:8px;
   padding-left: 20px;
 }
-@media (min-width: 768px) and (max-width: 1400px){
+@media (min-width: 768px) and (max-width: 1800px){
 #img1{
   left:300px;
  /* top: 10px; */
