@@ -128,8 +128,8 @@
     }
     .about-container div{
         width: 100%;
-        border: solid green;
-        height: 840px;
+        /* border: solid green; */
+        height: 820px;
     }
     .about-container div img{
         width: 300px;
@@ -140,7 +140,7 @@
     .about-text{
            /* max-width: 800px; */
     /* border: solid; */
-    height:800px;
+    height:820px;
     padding: 20px;
     border-radius: 10px;
     background-color: #ffffff;
