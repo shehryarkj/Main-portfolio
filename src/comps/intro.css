@@ -51,6 +51,7 @@
     z-index: 100;
   }
  
+ 
   #col1{
     /* border: solid; */
     position: relative;
@@ -59,6 +60,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    
     width:100%;
     
   }
