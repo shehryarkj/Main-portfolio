@@ -424,15 +424,16 @@ outline: #031f3c solid 0.01px;
   
    #ac{
     /* border: solid; */
-    /* display: flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
     /* padding-left: 100px; */
 
   }
 
   #md{
-    border: solid red;
+    /* border: solid red; */
    
   }
   .projects{
@@ -450,9 +451,9 @@ outline: #031f3c solid 0.01px;
   }
   #about{
     /* border: solid; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
   }
   
 
@@ -571,12 +572,18 @@ width:300px;
       /* border: solid; */
       width: 400px;
        }
+       #ch2{
+        position: relative;
+       top: -10px;
+      }
 #Services {
-display: grid;
-grid-template-columns: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
 /* padding-left: 50px; */
 /* border: solid; */
-gap: 70px;
+gap: 50px;
 }
 #anim{
   /* border: solid; */
@@ -643,6 +650,7 @@ gap: 70px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: solid; */
  
 }
 #img1{
@@ -650,7 +658,7 @@ gap: 70px;
  height:80%;
   border:0px;
   position: relative;
-  left:-30px;
+  left:-50px;
   top: 410px;
   z-index: -1;
 
@@ -790,12 +798,14 @@ gap: 70px;
   }
   #dbutton{
     position: relative;
-    top: 150px;
-    left: 150px;
+    top: 100px;
+    left: 140px;
   }
   #dbutton{
     border: solid black;
      z-index: 900;
+     /* position: relative; */
+     /* top: 10px; */
    }
 }
 #cc{

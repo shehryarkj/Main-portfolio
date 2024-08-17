@@ -16,6 +16,7 @@ function About() {
                 <Row className="justify-content-center">
                     <Col md={8} className="text-center">
                         <motion.h2
+                        id='ch2'
                             className="display-2 mb-5"
                             initial={{ opacity: 0, y: -50 }}
                             animate={{ opacity: 1, y: 0 }}
