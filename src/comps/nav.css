@@ -3,7 +3,14 @@
   #nav1{
     color: black;
   }
+  .dark-mode #nav1{
+    color: white;
+  }
 }
+.dark-mode .ml-auto{
+  color: white;}
+
+  
 #nav1{
   background-color: var(--background-color);
   color: var(--text-color);

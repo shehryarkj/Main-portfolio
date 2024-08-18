@@ -370,6 +370,8 @@ h3 {
   border-right: none;
   font-weight: 700;
 }
+.dark-mode .ml-auto{
+  color: white;}
 .App h2{
   position: relative;
   display: flex;
@@ -437,7 +439,7 @@ outline: #031f3c solid 0.01px;
    
   }
   .projects{
-    grid-template-columns: 50% 50%;
+    /* grid-template-columns: 50% 50%; */
   }
   #cc{
     /* border: solid; */
@@ -467,7 +469,7 @@ outline: #031f3c solid 0.01px;
 /* border: solid black; */
 margin-top:40px;
 position: relative;
-left: 20px;
+/* left: 20px; */
 width:300px;
    }
     #ac{
@@ -516,10 +518,65 @@ left: 250px;
 top:-50px;
  
 }
+#btn2{
+  display: none;
+}
+.cv{
+  background-color: transparent;
+  color: blue;
+transition:0.6s;
+}
+.cv:hover{
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
+.dark-mode .cv{
+  color: white;
+  background-color: transparent;
+}
   @media only screen and (max-width: 786px) {
 #img3{
   position: relative;
   left:0px;
+}
+
+.cv{
+  background-color: transparent;
+  color:white;
+transition:0.6s;
+}
+.cv:hover{
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
+
+
+.dark-mode .cv{
+  background-color: transparent;
+  color:white;
+transition:0.6s;
+
+}
+.dark-mode .cv:hover{
+  transform: scale(1.2);
+  background-color: black;
+  color: white;
+}
+
+.dark-mode #btn2{
+  position: relative;
+  top: 420px;
+  display: block;
+
+}
+
+#btn2{
+  position: relative;
+  top: 420px;
+  display: block;
+
 }
 
 #anim{
@@ -536,19 +593,21 @@ top:-50px;
       gap:70px;
     }
    .projects{
-    display: grid;
-    grid-template-columns: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
     /* border: solid; */
+
   
     
    }
   
    .cardp{
 /* border: solid black; */
-margin-top:40px;
+/* margin-top:40px; */
 /* position: relative; */
 /* left:30px; */
-width:300px;
+width:90%;
    }
    .skill-card{
     position: relative;
@@ -805,15 +864,25 @@ gap: 50px;
   }
   #dbutton{
     position: relative;
-    top: 100px;
-    left: 140px;
-  }
-  #dbutton{
     border: solid black;
-     z-index: 900;
-     /* position: relative; */
-     /* top: 10px; */
-   }
+    z-index: 900;
+    top: 0;
+    left:0;
+    
+    /* top: 100px; */
+    /* left: 140px; */
+  }
+   .dark{
+    /* border: solid; */
+    width: 500px;
+  position: relative;
+  top: -820px;
+  width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+
+  }
 }
 #cc{
   display: grid;

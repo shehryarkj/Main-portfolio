@@ -34,7 +34,12 @@ function Intro() {
           filter: 'blur(6px)',
 
         }}
-      ></div>
+        
+      >
+  
+
+
+      </div>
       <Container className="c1">
         <Row id="col2" className="justify-content-center align-items-center" style={{ minHeight: '100vh' }}>
           <Col lg={12} sm={12} id="col1" className="py-5" style={{ borderRadius: '10px' }}>
@@ -52,15 +57,26 @@ function Intro() {
                 repeat={Infinity}
               />
             </div>
+            <a
+            href={resume} // Link to your CV file
+            download="Shehryar_Khan_CV.pdf" // Suggested file name
+            style={{ textDecoration: 'none', zIndex: '10000' }}
+            id="btn2"
+          >
+            <Button className="cv"  style={{ padding:'10px 20px' }}>
+              Download CV
+            </Button>
+
+</a>
             <p className="lead">A MERN Stack Developer and Web Designer</p>
           </Col>
           <a
             href={resume} // Link to your CV file
             download="Shehryar_Khan_CV.pdf" // Suggested file name
-            style={{ textDecoration: 'none', zIndex: '10000' }}
+            style={{ textDecoration: 'none', zIndex: '20000' }}
             id="btn1"
           >
-            <Button variant="primary" style={{ padding: '10px 20px' }}>
+            <Button className="cv"  style={{ padding: '10px 20px' }}>
               Download CV
             </Button>
           </a>

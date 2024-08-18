@@ -33,13 +33,16 @@ function App() {
   return (
     <div className={darkMode ? 'dark-mode' : 'light-mode'} style={{ overflow: 'hidden' }}>
       <Navbare />
+    
+ 
+      <Intro />
+      <div className="dark">
       <button id='dbutton' style={{
        
       }} onClick={toggleDarkMode} className="theme-toggle">
         {darkMode ? 'Light Mode' : 'Dark Mode'}
       </button>
-      <Intro />
-    
+      </div>
       <About />
       <div id='app' className='App'>
         <Services />

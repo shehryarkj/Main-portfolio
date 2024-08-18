@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import "../comps/services.css";
 import { motion } from 'framer-motion';
 
@@ -21,12 +21,34 @@ const services = [
 ];
 
 const Services = () => {
-  // Determine if dark mode is enabled by checking a global theme context or similar method
-  // This is a placeholder. Replace with actual dark mode detection logic
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const section = document.getElementById('Services');
+      if (section) {
+        const top = section.getBoundingClientRect().top;
+        const height = window.innerHeight;
+        if (top < height) {
+          setIsVisible(true);
+        }
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   const isDarkMode = document.body.classList.contains('dark-mode');
 
   return (
-    <div id='Services' className={`services ${isDarkMode ? 'dark-mode' : ''}`}>
+    <motion.div
+      id='Services'
+      className={`services ${isDarkMode ? 'dark-mode' : ''}`}
+      initial={{ x: '100%', opacity: 0 }}
+      animate={isVisible ? { x: 0, opacity: 1 } : {}}
+      transition={{ duration: 0.5, ease: 'easeOut' }}
+    >
       <motion.h2
         className="display-2 mb-5"
         initial={{ opacity: 0, y: -50 }}
@@ -47,7 +69,7 @@ const Services = () => {
           <p>{service.description}</p>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 
