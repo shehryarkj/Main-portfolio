@@ -478,7 +478,11 @@ width:300px;
     }
 
     #cc{
-      padding:30px;
+      /* padding:30px; */
+      border: solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
     #contact h2{
    /* position: relative; */
