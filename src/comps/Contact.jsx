@@ -72,10 +72,11 @@ function ContactMe() {
                         <Col id='cnt' md={8} className="text-center">
                             <h2 className="display-4 mb-4">Contact Me</h2>
                             <p id='cp' className="lead mb-4">Feel free to reach out to me through any of the following methods:</p>
-                            <Row id='cc' className="justify-content-center">
-                                <Col md={6}>
-                                    {/* Additional contact info or section can go here */}
-                                </Col>
+                           
+                            <Row id='c' className="justify-content-center">
+                              <div className="cr">
+
+                             
                                 <Col md={6}>
                                     <Card id='ccard' className="contact-card mb-4 shadow-lg">
                                         <Card.Body>
@@ -105,6 +106,7 @@ function ContactMe() {
                                         </Card.Body>
                                     </Card>
                                 </Col>
+                                </div>
                             </Row>
                             <Form id='form' onSubmit={handleSubmit}>
                                 <Form.Group  controlId="formName">

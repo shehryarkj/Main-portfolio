@@ -46,7 +46,7 @@
   border-color: #007bff;
 }
 
-@media  (max-width: 786px){
+@media only screen and (min-width:390px) and (max-width:886px){
   .dark-mode #img1{
     z-index: 100;
   }
@@ -74,4 +74,16 @@
 }
 #col1{
   background-color: rgba(248, 249, 250, 0.7);
+}
+@media only screen and (max-width:390px)  {
+#col1{
+  /* border: solid; */
+  position: relative;
+ top: 100px;
+}
+
+.cv{
+  position: relative;
+  top:-100px;
+}
 }
